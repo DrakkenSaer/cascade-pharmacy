@@ -1,0 +1,7 @@
+[17-Oct-2016 18:59:25 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/ubuntu/workspace/wp-content/plugins/advanced-custom-fields-pro/forms/post.php on line 433
+[17-Oct-2016 18:59:25 UTC] PHP Stack trace:
+[17-Oct-2016 18:59:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/wp-admin/admin-ajax.php:0
+[17-Oct-2016 18:59:25 UTC] PHP   2. do_action() /home/ubuntu/workspace/wp-admin/admin-ajax.php:91
+[17-Oct-2016 18:59:25 UTC] PHP   3. call_user_func_array:{/home/ubuntu/workspace/wp-includes/plugin.php:524}() /home/ubuntu/workspace/wp-includes/plugin.php:524
+[17-Oct-2016 18:59:25 UTC] PHP   4. acf_form_post->get_field_groups() /home/ubuntu/workspace/wp-includes/plugin.php:524
+[17-Oct-2016 18:59:25 UTC] PHP   5. in_array() /home/ubuntu/workspace/wp-content/plugins/advanced-custom-fields-pro/forms/post.php:433
