@@ -84,6 +84,7 @@
 }
 
 .buffer-padding-100 { padding-top: 100px; padding-bottom: 100px; }
+.buffer-padding-bottom-100 { padding-bottom: 100px; }
 .buffer-padding-70-horizontal { padding-left: 70px; padding-right: 70px; }
 .buffer-padding-60-horizontal { padding-left: 60px; padding-right: 60px; }
 .buffer-padding-70 { padding-top: 70px; padding-bottom: 70px; }
@@ -94,7 +95,8 @@
 .buffer-padding-40 { padding-top: 40px; padding-bottom: 40px; }
 .buffer-padding-30 { padding-top: 30px; padding-bottom: 30px; }
 .buffer-padding-25 { padding-top: 25px; padding-bottom: 25px; }
-.buffer-padding-20 { padding-top: 20px; padding-bottom: 20px !important; }
+.buffer-padding-20 { padding-top: 20px; padding-bottom: 20px; }
+.buffer-padding-top-20 { padding-top: 20px; }
 .buffer-padding-20-horizontal { padding-left: 20px; padding-right: 20px; }
 .buffer-padding-15 { padding-top: 15px; padding-bottom: 15px; }
 .buffer-padding-10 { padding-top: 10px; padding-bottom: 10px; }

@@ -1,5 +1,5 @@
-    <footer class="container-fluid background-grey text-uppercase text-white text-center text-cinzel">
-      <div class="col-xs-12 text-bold font-size-130 buffer-padding-20">
+    <footer class="container-fluid background-grey text-uppercase text-center text-cinzel">
+      <div class="col-xs-12 text-bold font-size-130 buffer-padding-20 text-white">
         Follow us on social media
       </div>
       <div class="col-sm-4 col-sm-offset-4 col-xs-12 social">
@@ -9,8 +9,7 @@
         </div>
         <?php } ?>
       </div>
-      
-      <div class="col-sm-12 col-xs-12 text-bold buffer-padding-20">
+      <div class="col-sm-12 col-xs-12 text-bold buffer-padding-20 text-white">
         all rights reserved &copy; 2016 cascade natural health pharmacy
       </div>
     </footer>

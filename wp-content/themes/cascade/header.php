@@ -23,38 +23,36 @@
   <p style="background:#000; color:#fff; font-size:17px;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
 
-  <header id="hero" class="clearfix">
-    <div class="container-fluid home-background text-dark-blue font-size-150 text-center buffer-padding-100" id="home">
+  <header id="hero" class="clearfix" style="background-image: url('<?php the_field('header_stock_image', 'option') ?>'); background-size: cover;">
+    <div class="container-fluid text-white text-center font-size-150 buffer-padding-bottom-100 buffer-padding-top-20 menu" id="home">
       <div class="row">
-        <div class="menu">
-          <nav class="navbar" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="col-md-2 col-md-offset-3 col-xs-12" style="height: 250px;">
-              <div class="navbar-header">
-                <a href="<?php bloginfo('wpurl'); ?>"><img src="<?= get_template_directory_uri(); ?>/assets/images/logo.png"></img></a>
-              </div>
+        <nav class="navbar" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="col-md-2 col-md-offset-1 col-xs-12" style="height: 250px;">
+            <div class="navbar-header">
+              <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php the_field('header_logo_image', 'option') ?>" height="150"></img></a>
             </div>
-        
-            <div class="col-md-6 col-xs-12 buffer-padding-50">
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <?php
-                $args = array(
-                'theme_location' => 'header',
-                'menu_class' => 'nav navbar-nav navbar-right text-cinzel font-weight-700',
-                'menu_id' => 'navbar-items'
-                );
-                
-                wp_nav_menu($args); 
-              ?>
-            </div>
-          </nav>
-        </div>
+          </div>
+      
+          <div class="col-md-6 col-md-offset-2 col-xs-12 buffer-padding-50">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <?php
+              $args = array(
+              'theme_location' => 'header',
+              'menu_class' => 'nav navbar-nav navbar-right text-cinzel font-weight-700',
+              'menu_id' => 'navbar-items'
+              );
+              
+              wp_nav_menu($args); 
+            ?>
+          </div>
+        </nav>
       </div>
 
       <div class="row buffer-padding-50">
-        <div class="col-md-3 col-md-offset-3">
+        <div class="col-md-6 col-md-offset-3 text-center">
           <h1 class="text-cinzel text-uppercase font-weight-900"><?php the_field('header_section_title'); ?></h1>
-          <span class="text-bold"><?php the_field('header_section_content'); ?></span>
+          <?php the_field('header_section_content'); ?>
         </div>
       </div>
     </div>

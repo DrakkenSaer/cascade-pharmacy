@@ -16,15 +16,6 @@
     background-image: url('../images/team-bg.png');
     background-size: cover;
 }
-.home-background { 
-    background-image: url('../images/home-bg.png');
-    background-size: cover;
-}
-.logo { 
-    background-image: url('../images/logo.png');
-    background-size: cover;
-}
-
 
 /* Font CSS */
 
@@ -54,3 +45,18 @@ html, body {
 
 input, textarea, select { border-radius: 0 !important; }
 label, input[type="submit"] { color: #4A4AB0 !important; }
+
+/* Social Icons */
+
+.social a {
+    color: white;
+ }
+
+.social a:hover {
+    color: #92C83D;
+    border: solid 1px #92C83D;
+}
+
+.menu {
+    background: rgba(0,0,0,0.3);
+}
