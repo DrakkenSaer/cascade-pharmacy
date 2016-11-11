@@ -16,9 +16,9 @@ get_header(); ?>
         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
           <h2 class="text-green text-cinzel font-weight-900 text-uppercase"><?php the_field('about_title'); ?></h2>
           <span class="text-white"><?php the_field('about_content'); ?></span>
-          <div>
-            <img src="<?php the_field('about_section_image'); ?>" height="300"></img>
-          </div>
+        </div>
+        <div class="text-center">
+          <img src="<?php the_field('about_section_image'); ?>" height="200"></img>
         </div>
       </div>
     </div>
@@ -56,12 +56,12 @@ get_header(); ?>
       <div class="row hidden-xs background-grey">
         <div class="col-xs-12">
           <!-- Indicators -->
-          <ol class="list-unstyled list-inline text-center col-md-10 col-md-offset-2 col-xs-12">
+          <ol class="list-unstyled list-inline text-center col-md-10 col-md-offset-1 col-xs-12">
             <?php $index = 0; ?>
             <?php while ( have_rows('about_carousel_items') ) : the_row(); $index ++; ?>
-            <li data-target="#about-carousel" data-slide-to="<?php { echo($index - 1); } ?>" class="col-md-2 col-sm-3 <?php if( $index == 1 ) { echo("active"); } ?>">
-              <div class="center-block buffer-padding-20" style="width: 80px;">
-                <div class="fa-4x text-blue background-sky-blue border-radius-50-percent box-shadow-down-small cursor-pointer"><?php the_sub_field('icon'); ?></div>
+            <li data-target="#about-carousel" data-slide-to="<?php { echo($index - 1); } ?>" class="col-sm-3 <?php if( $index == 1 ) { echo("active"); } ?>">
+              <div class="center-block buffer-padding-20" style="width: 60px;">
+                <div class="fa-3x text-blue background-sky-blue border-radius-50-percent box-shadow-down-small cursor-pointer"><?php the_sub_field('icon'); ?></div>
               </div>
               <h5 class="text-cinzel text-uppercase text-green" style="word-wrap: break-word;"><?php the_sub_field('title'); ?></h5>
             </li>
@@ -143,8 +143,8 @@ get_header(); ?>
         <h2 class="text-cinzel text-center font-weight-900 buffer-margin-50"><?php the_field('contact_section_title'); ?></h2>
       </div>
 
-      <div class="col-md-5 col-xs-12">
-        <div id="map" style="height: 550px;"></div>
+      <div class="col-md-4 col-md-offset-1 col-xs-12 buffer-margin-50">
+        <div id="map" style="height: 400px;"></div>
         <script>
           var geocoder;
           var map;

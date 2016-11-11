@@ -24,7 +24,7 @@
 <![endif]-->
 
   <header id="hero" class="clearfix" style="background-image: url('<?php the_field('header_stock_image', 'option') ?>'); background-size: cover;">
-    <div class="container-fluid text-white text-center font-size-150 buffer-padding-bottom-100 buffer-padding-top-20 menu" id="home">
+    <div class="container-fluid text-white text-center font-size-150 buffer-padding-bottom-100 buffer-padding-top-50 menu" id="home">
       <div class="row">
         <nav class="navbar" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
