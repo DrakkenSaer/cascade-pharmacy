@@ -17,7 +17,7 @@ get_header(); ?>
           <h2 class="text-green text-cinzel font-weight-900 text-uppercase"><?php the_field('about_title'); ?></h2>
           <span class="text-white"><?php the_field('about_content'); ?></span>
         </div>
-        <div class="text-center">
+        <div class="text-center col-xs-12">
           <img src="<?php the_field('about_section_image'); ?>" height="200"></img>
         </div>
       </div>
