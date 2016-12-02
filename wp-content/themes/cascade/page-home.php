@@ -11,19 +11,21 @@ get_header(); ?>
   <main>
     <?php if( have_rows('about_carousel_items') ): ?>
     
-    <div class="container-fluid background-grey buffer-padding-50" id="about">
+    <div class="container-fluid background-green buffer-padding-50" id="about">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 text-center">
-          <h2 class="text-green text-cinzel font-weight-900 text-uppercase"><?php the_field('about_title'); ?></h2>
-          <span class="text-white"><?php the_field('about_content'); ?></span>
+          <h2 class="text-white text-cinzel font-weight-900 text-uppercase"><?php the_field('about_title'); ?></h2>
+          <span><?php the_field('about_content'); ?></span>
         </div>
+        <?php if(get_field('about_section_image')): ?>
         <div class="text-center col-xs-12">
           <img src="<?php the_field('about_section_image'); ?>" height="200"></img>
         </div>
+        <?php endif ?>
       </div>
     </div>
 
-    <div class="container-fluid border-top-green-10">
+    <div class="container-fluid border-top-grey-10">
       <div class="row">
         <div id="about-carousel" class="carousel slide buffer-padding-100" data-ride="carousel">
           <!-- Wrapper for slides -->

@@ -30,7 +30,7 @@
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="col-md-2 col-md-offset-1 col-xs-12" style="height: 250px;">
             <div class="navbar-header">
-              <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php the_field('header_logo_image', 'option') ?>" height="150"></img></a>
+              <a href="<?php bloginfo('wpurl'); ?>"><img src="<?php the_field('header_logo_image', 'option') ?>" height="200"></img></a>
             </div>
           </div>
       
